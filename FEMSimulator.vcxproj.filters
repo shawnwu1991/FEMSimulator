@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{4cfe3254-9bb3-4aeb-9ad7-19fc2cfb8ec3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{1b09bffc-7fd1-4857-be40-8ad2f973e617}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{3e535f26-b2c9-4737-ba62-0fd15fd225af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation">
+      <UniqueIdentifier>{7520b99d-099c-48d0-aa60-afd38200d41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\SIMDSVD">
+      <UniqueIdentifier>{4953382e-5771-4824-b040-93ace5af055b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulation\Wm5">
+      <UniqueIdentifier>{84430052-a5bd-482d-aa3d-26aca9e1519d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tinyxml">
+      <UniqueIdentifier>{bc4de691-7dfd-483c-a1c1-42e7be629ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trimesh2">
+      <UniqueIdentifier>{d9d75cc7-12d4-4148-9a8b-50474db4a389}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="femsimulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_femsimulator.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_femsimulator.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_femsimulator.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CentralGLWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CentralGLWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CentralGLWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLTetMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Assert.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Distance.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine2Segment2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine3Segment3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistPoint3Tetrahedron3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistPoint3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistSegment3Segment3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistSegment3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5EigenDecomposition.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Intersector.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Intersector1.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrBox3Box3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine2Triangle2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Box3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Capsule3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Cylinder3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Ellipsoid3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Plane3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Sphere3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment2Triangle2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Box3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Capsule3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Cylinder3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Ellipsoid3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Plane3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Sphere3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTetrahedron3Tetrahedron3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle2Triangle2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Box3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Cylinder3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Sphere3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Triangle3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrUtility3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Math.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix4.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Memory.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Mutex.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Quaternion.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Query.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5SingularValueDecomposition.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5SmartPointer.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector2.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector3.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector4.cpp">
+      <Filter>Simulation\Wm5</Filter>
+    </ClCompile>
+    <ClCompile Include="TetMesh.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="CorotatedLinearModel.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="FEMIntegrator.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="VegaFEMInterface.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="CorotatedLinearModelMultiThreaded.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialIntegrator.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractIntegrator.cpp">
+      <Filter>Simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinystr.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxml.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlerror.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlparser.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\conn_comps.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\diffuse.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\edgeflip.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\faceflip.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\filter.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\GLCamera.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\ICP.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\KDtree.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\lmsmooth.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\overlap.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\remove.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\reorder_verts.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\subdiv.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_bounding.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_connectivity.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_curvature.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_grid.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_io.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_normals.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_pointareas.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_stats.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_tstrips.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="RestShapeProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TrajParameterProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DinosaruAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GreenRubberAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HangerAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_femsimulator.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinConsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Jacobi_Conjugation_Kernel.hpp">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Kernel_Declarations.hpp">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Main_Kernel_Body.hpp">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Preamble.hpp">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\SIMD_SVD.h">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Givens_QR_Factorization_Kernel.hpp">
+      <Filter>Simulation\SIMDSVD</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Assert.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5AxisAlignedBox2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5AxisAlignedBox3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Box3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Capsule3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5CoreLIB.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Cylinder3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Distance.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistLine2Segment2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistLine3Segment3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistLine3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistPoint3Tetrahedron3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistPoint3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistSegment3Segment3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5DistSegment3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5EigenDecomposition.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Ellipsoid3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5GMatrix.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5GVector.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Intersector.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Intersector1.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrBox3Box3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine2Triangle2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Box3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Capsule3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Cylinder3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Ellipsoid3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Plane3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Sphere3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrLine3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment2Triangle2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Box3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Capsule3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Cylinder3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Ellipsoid3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Plane3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Sphere3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrSegment3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTetrahedron3Tetrahedron3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTriangle2Triangle2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Box3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Cylinder3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Sphere3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5IntrUtility3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Line2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Line3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Math.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5MathematicsLIB.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Matrix2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Matrix3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Matrix4.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Memory.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Mutex.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5MutexType.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Plane3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Polynomial1.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Quaternion.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Query.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Query2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Query3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Segment2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Segment3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5SingularValueDecomposition.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5SmartPointer.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Sphere3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Table.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Tetrahedron3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Triangle2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Triangle3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Tuple.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Vector2.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Vector3.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="Wm5\Wm5Vector4.h">
+      <Filter>Simulation\Wm5</Filter>
+    </ClInclude>
+    <ClInclude Include="TetMesh.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="StdStrings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CorotatedLinearModel.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMatInterface.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="PolarDecomposition.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="InlinedShaderCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VegaFEMInterface.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="FEMIntegrator.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="CorotatedLinearModelMultiThreaded.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialIntegrator.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractIntegrator.h">
+      <Filter>Simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\OptixCollisionDetection\CollisionPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\tinyxml\tinystr.h">
+      <Filter>Tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\tinyxml\tinyxml.h">
+      <Filter>Tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\bsphere.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\Color.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\GLCamera.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\ICP.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\KDtree.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\lineqn.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\mempool.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\noise3d.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\strutil.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\timestamp.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\TriMesh.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\TriMesh_algo.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\Vec.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\trimesh2\XForm.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="comHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RestShapeProblem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrajParameterProblem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DinosaruAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GreenRubberAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangerAnimation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="femsimulator.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="femsimulator.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="femsimulator.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CentralGLWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GLTetMesh.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FEMSimulator.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Ground.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Ground.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Default.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Default.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Wm5\Wm5AxisAlignedBox2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5AxisAlignedBox3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Box3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Capsule3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Cylinder3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Ellipsoid3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5GMatrix.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5GVector.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Line2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Line3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Math.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Matrix2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Matrix3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Matrix4.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Memory.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Plane3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Polynomial1.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Quaternion.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Query2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Query3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Segment2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Segment3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5SmartPointer.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Sphere3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Table.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Tetrahedron3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Triangle2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Triangle3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Tuple.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Vector2.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Vector3.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Wm5\Wm5Vector4.inl">
+      <Filter>Simulation\Wm5</Filter>
+    </None>
+    <None Include="Shaders\TetForce.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\TetForce.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

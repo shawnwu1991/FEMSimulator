@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/Shaders">
+        <file>Shaders/Default.frag</file>
+        <file>Shaders/Default.vert</file>
+        <file>Shaders/Ground.frag</file>
+        <file>Shaders/Ground.vert</file>
+        <file>Shaders/TetForce.vert</file>
+        <file>Shaders/TetForce.frag</file>
+    </qresource>
+    <qresource prefix="/Images">
+        <file>Images/blackPoint.png</file>
+        <file>Images/do_step.png</file>
+        <file>Images/load.png</file>
+        <file>Images/pause.png</file>
+        <file>Images/run.png</file>
+        <file>Images/scan.png</file>
+        <file>Images/stop.png</file>
+        <file>Images/export.png</file>
+        <file>Images/loadshape.png</file>
+        <file>Images/CameraIn.png</file>
+        <file>Images/CameraOut.png</file>
+    </qresource>
+</RCC>

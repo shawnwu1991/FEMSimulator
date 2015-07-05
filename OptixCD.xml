@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OptixCD>
+  <CollisionEngine>
+    <Resolution row="64" col="64"/>
+    <RayGenerator name="CUDA-RG" RaySubdivision="0" CoarsenRays="1" ExpectedError="0.5" OccupyRender="1" SceneEpsilon="1e-4"/>
+	<Render>
+		<IntersectedRaysColor r="1.0" g="0.285" b="0.0" a="1.0"/>
+		<IntersectedPointsColor r="1.0" g="0.285" b="0.0" a="1.0"/>
+		<NonIntersectedPointsColor  r="1.0" g="0.746" b="0.0" a="1.0"/>
+		<BBoxGridColor r="0.8" g="0.8" b="0.8" a="1.0"/>
+		<Point size="3"/>
+	</Render>
+  </CollisionEngine>
+  <Scene>
+  </Scene>
+  <Render>
+    <HelpFontColor r="0.1" g="0.4" b="0.1" a="1.0"/>
+    <BackgroundColor r="1.0" g="1.0" b="1.0" a="1.0"/>
+    <Window w="800" h="800"/>
+  </Render>
+  <TestInfo>
+    <SeperatePrim triangle="20" edge="1" />
+    <VolumeTest enable="false"/>
+    <Log path="./testLog.txt"/>
+    <Repeat enable="false" times="5" step="0.002"/>
+    <MaxFrame num="77720"/>
+  </TestInfo>
+</OptixCD>

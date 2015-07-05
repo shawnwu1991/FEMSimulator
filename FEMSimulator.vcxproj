@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);.\GeneratedFiles;.;C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include;$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include\opencv\;$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include\;$(SolutionDir)\VegaFEM;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtANGLE;$(SolutionDir)\ThirdParty\KNITROStudent9.0.1\include\;$(SolutionDir)\ThirdParty\NLopt;$(SolutionDir)\ThirdParty\Trimesh2;$(SolutionDir)\third_party\OptixCollisionDetection;$(SolutionDir)\third_party;$(SolutionDir)\third_party\NLopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\lib\intel64;$(SolutionDir)\third_party\NLopt;$(SolutionDir)\third_party\OptixCollisionDetection\lib\$(Configuration);$(CUDA_LIB_PATH);$(SolutionDir)\third_party\ARPACK++\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mkl_core.lib;mkl_intel_lp64.lib;mkl_lapack95_lp64.lib;mkl_blas95_lp64.lib;mkl_rt.lib;mkl_sequential.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5Concurrentd.lib;Qt5OpenGLd.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;OptixCD.lib;optix.1.lib;freeglut.lib;cudart.lib;cublas.lib;glew32.lib;opengl32.lib;glu32.lib;libnlopt-0.lib;arpack_win64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CONCURRENT_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_XML_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Fabrication\workingNew\third_party\mkl\include;$(SolutionDir);.\GeneratedFiles;.;C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include;$(SolutionDir)\VegaFEM;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtANGLE;$(SolutionDir)\third_party\OptixCollisionDetection;$(SolutionDir)\third_party;$(SolutionDir)\third_party\NLopt;$(SolutionDir)\third_party\ARPACK++\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SolutionDir)$(Platform)\$(Configuration)\;C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\lib\intel64;$(CUDA_LIB_PATH);$(SolutionDir)\third_party\OptixCollisionDetection\lib\$(Configuration);$(SolutionDir)\third_party\NLopt;$(SolutionDir)\third_party\ARPACK++\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_core.lib;E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_intel_lp64.lib;E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_lapack95_lp64.lib;E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_blas95_lp64.lib;E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_rt.lib;E:\Fabrication\workingNew\third_party\mkl\intel64\mkl_sequential.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Concurrent.lib;Qt5OpenGL.lib;Qt5Widgets.lib;Qt5Xml.lib;glew32.lib;opengl32.lib;glu32.lib;libnlopt-0.lib;arpack_win64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\tinyxml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\tinyxml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\conn_comps.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\diffuse.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\edgeflip.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\faceflip.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\filter.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\GLCamera.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\ICP.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\KDtree.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\lmsmooth.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\overlap.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\remove.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\reorder_verts.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\subdiv.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_bounding.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_connectivity.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_curvature.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_grid.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_io.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_normals.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_pointareas.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_stats.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\third_party\trimesh2\TriMesh_tstrips.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AbstractIntegrator.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CentralGLWidget.cpp" />
+    <ClCompile Include="CorotatedLinearModel.cpp" />
+    <ClCompile Include="CorotatedLinearModelMultiThreaded.cpp" />
+    <ClCompile Include="DinosaruAnimation.cpp" />
+    <ClCompile Include="FEMIntegrator.cpp" />
+    <ClCompile Include="femsimulator.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_CentralGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_femsimulator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_femsimulator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CentralGLWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_femsimulator.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GLTetMesh.cpp" />
+    <ClCompile Include="GreenRubberAnimation.cpp" />
+    <ClCompile Include="HangerAnimation.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MaterialIntegrator.cpp" />
+    <ClCompile Include="RestShapeProblem.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TetMesh.cpp" />
+    <ClCompile Include="TrajParameterProblem.cpp" />
+    <ClCompile Include="VegaFEMInterface.cpp" />
+    <ClCompile Include="WinConsole.cpp" />
+    <ClCompile Include="Wm5\Wm5Assert.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Distance.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine2Segment2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine3Segment3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistLine3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistPoint3Tetrahedron3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistPoint3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistSegment3Segment3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5DistSegment3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5EigenDecomposition.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Intersector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Intersector1.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrBox3Box3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine2Triangle2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Box3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Capsule3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Cylinder3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Ellipsoid3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Plane3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Sphere3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrLine3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment2Triangle2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Box3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Capsule3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Cylinder3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Ellipsoid3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Plane3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Sphere3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrSegment3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTetrahedron3Tetrahedron3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle2Triangle2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Box3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Cylinder3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Sphere3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrTriangle3Triangle3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5IntrUtility3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Math.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Matrix4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Memory.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Mutex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Quaternion.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Query.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5SingularValueDecomposition.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5SmartPointer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wm5\Wm5Vector4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\OptixCollisionDetection\CollisionPipeline.h" />
+    <ClInclude Include="..\third_party\tinyxml\tinystr.h" />
+    <ClInclude Include="..\third_party\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\third_party\trimesh2\bsphere.h" />
+    <ClInclude Include="..\third_party\trimesh2\Color.h" />
+    <ClInclude Include="..\third_party\trimesh2\GLCamera.h" />
+    <ClInclude Include="..\third_party\trimesh2\ICP.h" />
+    <ClInclude Include="..\third_party\trimesh2\KDtree.h" />
+    <ClInclude Include="..\third_party\trimesh2\lineqn.h" />
+    <ClInclude Include="..\third_party\trimesh2\mempool.h" />
+    <ClInclude Include="..\third_party\trimesh2\noise3d.h" />
+    <ClInclude Include="..\third_party\trimesh2\strutil.h" />
+    <ClInclude Include="..\third_party\trimesh2\timestamp.h" />
+    <ClInclude Include="..\third_party\trimesh2\TriMesh.h" />
+    <ClInclude Include="..\third_party\trimesh2\TriMesh_algo.h" />
+    <ClInclude Include="..\third_party\trimesh2\Vec.h" />
+    <ClInclude Include="..\third_party\trimesh2\XForm.h" />
+    <ClInclude Include="AbstractIntegrator.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="comHeader.h" />
+    <ClInclude Include="CorotatedLinearModel.h" />
+    <ClInclude Include="CorotatedLinearModelMultiThreaded.h" />
+    <ClInclude Include="DinosaruAnimation.h" />
+    <ClInclude Include="FEMIntegrator.h" />
+    <ClInclude Include="GreenRubberAnimation.h" />
+    <ClInclude Include="HangerAnimation.h" />
+    <ClInclude Include="InlinedShaderCode.h" />
+    <ClInclude Include="MaterialIntegrator.h" />
+    <ClInclude Include="PolarDecomposition.h" />
+    <ClInclude Include="RestShapeProblem.h" />
+    <ClInclude Include="StdStrings.h" />
+    <ClInclude Include="TetMesh.h" />
+    <ClInclude Include="TrajParameterProblem.h" />
+    <ClInclude Include="VecMatInterface.h" />
+    <ClInclude Include="VegaFEMInterface.h" />
+    <ClInclude Include="Wm5\Wm5Assert.h" />
+    <ClInclude Include="Wm5\Wm5AxisAlignedBox2.h" />
+    <ClInclude Include="Wm5\Wm5AxisAlignedBox3.h" />
+    <ClInclude Include="Wm5\Wm5Box3.h" />
+    <ClInclude Include="Wm5\Wm5Capsule3.h" />
+    <ClInclude Include="Wm5\Wm5CoreLIB.h" />
+    <ClInclude Include="Wm5\Wm5Cylinder3.h" />
+    <ClInclude Include="Wm5\Wm5Distance.h" />
+    <ClInclude Include="Wm5\Wm5DistLine2Segment2.h" />
+    <ClInclude Include="Wm5\Wm5DistLine3Segment3.h" />
+    <ClInclude Include="Wm5\Wm5DistLine3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5DistPoint3Tetrahedron3.h" />
+    <ClInclude Include="Wm5\Wm5DistPoint3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5DistSegment3Segment3.h" />
+    <ClInclude Include="Wm5\Wm5DistSegment3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5EigenDecomposition.h" />
+    <ClInclude Include="Wm5\Wm5Ellipsoid3.h" />
+    <ClInclude Include="Wm5\Wm5GMatrix.h" />
+    <ClInclude Include="Wm5\Wm5GVector.h" />
+    <ClInclude Include="Wm5\Wm5Intersector.h" />
+    <ClInclude Include="Wm5\Wm5Intersector1.h" />
+    <ClInclude Include="Wm5\Wm5IntrBox3Box3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine2Triangle2.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Box3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Capsule3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Cylinder3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Ellipsoid3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Plane3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Sphere3.h" />
+    <ClInclude Include="Wm5\Wm5IntrLine3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment2Triangle2.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Box3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Capsule3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Cylinder3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Ellipsoid3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Plane3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Sphere3.h" />
+    <ClInclude Include="Wm5\Wm5IntrSegment3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5IntrTetrahedron3Tetrahedron3.h" />
+    <ClInclude Include="Wm5\Wm5IntrTriangle2Triangle2.h" />
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Box3.h" />
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Cylinder3.h" />
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Sphere3.h" />
+    <ClInclude Include="Wm5\Wm5IntrTriangle3Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5IntrUtility3.h" />
+    <ClInclude Include="Wm5\Wm5Line2.h" />
+    <ClInclude Include="Wm5\Wm5Line3.h" />
+    <ClInclude Include="Wm5\Wm5Math.h" />
+    <ClInclude Include="Wm5\Wm5MathematicsLIB.h" />
+    <ClInclude Include="Wm5\Wm5Matrix2.h" />
+    <ClInclude Include="Wm5\Wm5Matrix3.h" />
+    <ClInclude Include="Wm5\Wm5Matrix4.h" />
+    <ClInclude Include="Wm5\Wm5Memory.h" />
+    <ClInclude Include="Wm5\Wm5Mutex.h" />
+    <ClInclude Include="Wm5\Wm5MutexType.h" />
+    <ClInclude Include="Wm5\Wm5Plane3.h" />
+    <ClInclude Include="Wm5\Wm5Polynomial1.h" />
+    <ClInclude Include="Wm5\Wm5Quaternion.h" />
+    <ClInclude Include="Wm5\Wm5Query.h" />
+    <ClInclude Include="Wm5\Wm5Query2.h" />
+    <ClInclude Include="Wm5\Wm5Query3.h" />
+    <ClInclude Include="Wm5\Wm5Segment2.h" />
+    <ClInclude Include="Wm5\Wm5Segment3.h" />
+    <ClInclude Include="Wm5\Wm5SingularValueDecomposition.h" />
+    <ClInclude Include="Wm5\Wm5SmartPointer.h" />
+    <ClInclude Include="Wm5\Wm5Sphere3.h" />
+    <ClInclude Include="Wm5\Wm5Table.h" />
+    <ClInclude Include="Wm5\Wm5Tetrahedron3.h" />
+    <ClInclude Include="Wm5\Wm5Triangle2.h" />
+    <ClInclude Include="Wm5\Wm5Triangle3.h" />
+    <ClInclude Include="Wm5\Wm5Tuple.h" />
+    <ClInclude Include="Wm5\Wm5Vector2.h" />
+    <ClInclude Include="Wm5\Wm5Vector3.h" />
+    <ClInclude Include="Wm5\Wm5Vector4.h" />
+    <CustomBuild Include="Camera.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="GLTetMesh.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="SIMD_SVD\SIMD_SVD.h" />
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Givens_QR_Factorization_Kernel.hpp" />
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Jacobi_Conjugation_Kernel.hpp" />
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Kernel_Declarations.hpp" />
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Main_Kernel_Body.hpp" />
+    <ClInclude Include="SIMD_SVD\Singular_Value_Decomposition_Preamble.hpp" />
+    <ClInclude Include="WinConsole.h" />
+    <CustomBuild Include="CentralGLWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing CentralGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -D_UNICODE  "-I$(SolutionDir)\." "-I.\GeneratedFiles" "-I." "-IC:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" "-I$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include\opencv" "-I$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include" "-I$(SolutionDir)\VegaFEM" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtANGLE" "-I$(SolutionDir)\ThirdParty\KNITROStudent9.0.1\include" "-I$(SolutionDir)\ThirdParty\NLopt" "-I$(SolutionDir)\ThirdParty\Trimesh2" "-I$(SolutionDir)\third_party\OptixCollisionDetection" "-I$(SolutionDir)\third_party" "-I$(SolutionDir)\third_party\NLopt" "-fstdafx.h" "-f../../CentralGLWidget.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing CentralGLWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -D_UNICODE  "-I$(SolutionDir)\." "-I.\GeneratedFiles" "-I." "-IC:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" "-I$(SolutionDir)\VegaFEM" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtANGLE" "-I$(SolutionDir)\third_party\OptixCollisionDetection" "-I$(SolutionDir)\third_party" "-I$(SolutionDir)\third_party\NLopt" "-I$(SolutionDir)\third_party\ARPACK++\include" "-fstdafx.h" "-f../../CentralGLWidget.h"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_femsimulator.h" />
+    <CustomBuild Include="femsimulator.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing femsimulator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -D_UNICODE  "-I$(SolutionDir)\." "-I.\GeneratedFiles" "-I." "-IC:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" "-I$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include\opencv" "-I$(SolutionDir)\ThirdParty\OpenCV-2.4.8\include" "-I$(SolutionDir)\VegaFEM" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtANGLE" "-I$(SolutionDir)\ThirdParty\KNITROStudent9.0.1\include" "-I$(SolutionDir)\ThirdParty\NLopt" "-I$(SolutionDir)\ThirdParty\Trimesh2" "-I$(SolutionDir)\third_party\OptixCollisionDetection" "-I$(SolutionDir)\third_party" "-I$(SolutionDir)\third_party\NLopt" "-fstdafx.h" "-f../../femsimulator.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing femsimulator.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CONCURRENT_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_XML_LIB -D_UNICODE  "-I$(SolutionDir)\." "-I.\GeneratedFiles" "-I." "-IC:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" "-I$(SolutionDir)\VegaFEM" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtANGLE" "-I$(SolutionDir)\third_party\OptixCollisionDetection" "-I$(SolutionDir)\third_party" "-I$(SolutionDir)\third_party\NLopt" "-I$(SolutionDir)\third_party\ARPACK++\include" "-fstdafx.h" "-f../../femsimulator.h"</Command>
+    </CustomBuild>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="femsimulator.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="femsimulator.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FEMSimulator.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Default.frag" />
+    <None Include="Shaders\Default.vert" />
+    <None Include="Shaders\Ground.frag" />
+    <None Include="Shaders\Ground.vert" />
+    <None Include="Shaders\TetForce.frag" />
+    <None Include="Shaders\TetForce.vert" />
+    <None Include="Wm5\Wm5AxisAlignedBox2.inl" />
+    <None Include="Wm5\Wm5AxisAlignedBox3.inl" />
+    <None Include="Wm5\Wm5Box3.inl" />
+    <None Include="Wm5\Wm5Capsule3.inl" />
+    <None Include="Wm5\Wm5Cylinder3.inl" />
+    <None Include="Wm5\Wm5Ellipsoid3.inl" />
+    <None Include="Wm5\Wm5GMatrix.inl" />
+    <None Include="Wm5\Wm5GVector.inl" />
+    <None Include="Wm5\Wm5Line2.inl" />
+    <None Include="Wm5\Wm5Line3.inl" />
+    <None Include="Wm5\Wm5Math.inl" />
+    <None Include="Wm5\Wm5Matrix2.inl" />
+    <None Include="Wm5\Wm5Matrix3.inl" />
+    <None Include="Wm5\Wm5Matrix4.inl" />
+    <None Include="Wm5\Wm5Memory.inl" />
+    <None Include="Wm5\Wm5Plane3.inl" />
+    <None Include="Wm5\Wm5Polynomial1.inl" />
+    <None Include="Wm5\Wm5Quaternion.inl" />
+    <None Include="Wm5\Wm5Query2.inl" />
+    <None Include="Wm5\Wm5Query3.inl" />
+    <None Include="Wm5\Wm5Segment2.inl" />
+    <None Include="Wm5\Wm5Segment3.inl" />
+    <None Include="Wm5\Wm5SmartPointer.inl" />
+    <None Include="Wm5\Wm5Sphere3.inl" />
+    <None Include="Wm5\Wm5Table.inl" />
+    <None Include="Wm5\Wm5Tetrahedron3.inl" />
+    <None Include="Wm5\Wm5Triangle2.inl" />
+    <None Include="Wm5\Wm5Triangle3.inl" />
+    <None Include="Wm5\Wm5Tuple.inl" />
+    <None Include="Wm5\Wm5Vector2.inl" />
+    <None Include="Wm5\Wm5Vector3.inl" />
+    <None Include="Wm5\Wm5Vector4.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" Qt5Version_x0020_Win32="Qt5.2.0" Qt5Version_x0020_x64="5.2.2" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
